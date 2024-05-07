@@ -1,3 +1,4 @@
+#CREATED GLOBAL AND LOCAL VARIABLES
 #Global variale
 globalvariable = input("Enter your name please?\n ").capitalize()
 
@@ -14,3 +15,4 @@ main()
 
 print(globalvariable)
 print(x)
+

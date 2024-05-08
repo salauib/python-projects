@@ -39,3 +39,11 @@ def main():
     txt = "Programmer"
     print(txt[1:7])
 main()
+
+
+#Remove whitespace from program
+def main():
+    a = " Prome queen is here "
+    print(a.upper())
+    print(a.strip())
+main()

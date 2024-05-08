@@ -16,6 +16,10 @@
 # print(globalvariable)
 # print(x)
 
+
+
+
+
 #Data Types
 #Setting and getting data types
 

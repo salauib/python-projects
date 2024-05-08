@@ -23,7 +23,6 @@ def main():
     print("makes" in textMessage.lower())
 main()
 
-
 #Checking if a character is present in a Str using If statement
 #Using keywords "in" or "not in"
 def main():
@@ -40,10 +39,17 @@ def main():
     print(txt[1:7])
 main()
 
-
 #Remove whitespace from program
 def main():
-    a = " Prome queen is here "
-    print(a.upper())
-    print(a.strip())
+    a = " Prome queen is here! "
+    print(a.upper().strip())
 main()
+
+#Replace string
+def main():
+    a = "Mallam, Audu!"
+    print(a)
+    print(a.replace("M", "S"))
+    print(a.split(",")) #Split string output
+main()
+

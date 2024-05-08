@@ -53,3 +53,27 @@ def main():
     print(a.split(",")) #Split string output
 main()
 
+#Concatination (Merging)
+def main():
+    a = "1"
+    b = "2"
+    c = "3"
+    e = 2
+    d = a + " " + b + " " + c
+    print(d)
+main()
+
+#Formating Str
+def main():
+    age = 37
+    price = 30
+    txt = f"My name is Salau, I am {age} years old. Give me {price:.2f}"
+    print(txt)
+    print
+main()
+
+#Escape character
+def main():
+    txt = "The so-called \"Kings\" from the west"
+    print(txt)
+main()

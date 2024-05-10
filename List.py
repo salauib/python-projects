@@ -77,3 +77,22 @@ def main():
     [print(k) for k in myList22]
 main()
 
+#List Comprehension
+#Get items from a list into a new list
+def main():
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+    newList = []
+
+    for x in fruits:
+        if "a" in x:
+            newList.append(x)
+    print(fruits)        
+    print(newList)
+theResult = main()
+
+############################
+#Using range() function to create an iterable list
+def main():
+    newList = [x for x in range(10)]
+    print(newList)
+main()

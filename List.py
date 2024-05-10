@@ -1,3 +1,4 @@
+######################################
 #Creat a LIST
 def main():
     myList = ["Apple", "Mango", "Guava", "mango"]
@@ -52,7 +53,7 @@ def main():
     print(myList5)
 main()
 
-
+######################################
 #Looping through List using for loop
 def main():
     myList = ["Apple", "Mango", "Guava", "mango"]
@@ -61,6 +62,7 @@ def main():
         print(i)
 main()
 
+############################################
 #Looping through List using while loop
 def main():
     myList2 = [1, 2, 3, 4, 8, 26, 5]
@@ -71,28 +73,47 @@ def main():
         i += 1
 main()
 
+###################################################
 #Looping using List comprehension
 def main():
     myList22 =[6, 7, 22, 33, 4, 00, 0, 10]
     [print(k) for k in myList22]
 main()
 
+###################################################
 #List Comprehension
 #Get items from a list into a new list
 def main():
-    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango", "Cashew"]
     newList = []
 
     for x in fruits:
-        if "a" in x:
+        if "e" in x:
             newList.append(x)
-    print(fruits)        
+    print(fruits)       
     print(newList)
 theResult = main()
 
 ############################
-#Using range() function to create an iterable list
+#Using range() function to create an iterable list, with condition
 def main():
-    newList = [x for x in range(10)]
+    newList = [x for x in range(10) if x < 7]
     print(newList)
+    print(len(newList), end=".\n")
 main()
+
+#########################################
+#Sorting List using sort() method
+def main():
+    numbered_list = [ 100, 30, 33, 82, 23]
+    this_list = ["orange", "mango", "kiwi", "pineapple", "banana"]
+    reverse_list = ["kemi", "adam", "bello", "oye", "salau"]
+    numbered_list.sort() #ALphabetically
+    this_list.sort() #Numerically
+    reverse_list.sort(reverse= True)
+
+    print(numbered_list)
+    print(this_list)
+    print(reverse_list)
+main()
+

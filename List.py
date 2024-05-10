@@ -159,3 +159,20 @@ def main():
     print(thislist)
 
 main()
+
+#######################################
+#Two ways to make a copy of a list
+#First use copy() method, second use list() method
+def main():
+    firstlist = ["apple", "peanut", "guava"]
+    secondList = ["mango", "cashew", "orange"]
+
+    firstCoppiedList = firstlist.copy()
+    secondCoppiedList = list(secondList)
+
+    print(firstlist)
+    print(secondList)
+    print(firstCoppiedList)
+    print(secondCoppiedList)
+
+finalResult = main()

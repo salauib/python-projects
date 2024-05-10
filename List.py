@@ -108,6 +108,7 @@ def main():
     numbered_list = [ 100, 30, 33, 82, 23]
     this_list = ["orange", "mango", "kiwi", "pineapple", "banana"]
     reverse_list = ["kemi", "adam", "bello", "oye", "salau"]
+
     numbered_list.sort() #ALphabetically
     this_list.sort() #Numerically
     reverse_list.sort(reverse= True)
@@ -117,3 +118,44 @@ def main():
     print(reverse_list)
 main()
 
+########################################
+#Customized sort Function (key = function)
+def main():
+    def myFunc(n):
+        return abs(n - 50)
+
+    thisList = [100, 50, 65, 82, 23]
+    thisList.sort(key = myFunc)
+
+    print(thisList)
+main()
+
+#########################################
+#Case sensitive sorting, sorts capital befor ascending small letters
+def main():
+    thislist = ["banana", "Orange", "Kiwi", "cherry"]
+    thislist.sort()
+
+    print(thislist)
+main()
+
+#################################
+#Case-insensitive, sorts in ascending other with or without 
+#...words starting with capital letter
+def main():
+    thislist = ["banana", "Orange", "Kiwi", "cherry"]
+    thislist.sort(key = str.lower)
+    
+    print(thislist)
+
+main()
+
+#################################
+#Reverses the list regardless of th alphabet using reverse() method
+def main():
+    thislist = ["banana", "Orange", "Kiwi", "cherry"]
+    thislist.reverse()
+    
+    print(thislist)
+
+main()

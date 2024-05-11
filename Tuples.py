@@ -99,7 +99,6 @@ main()
 #     del thisTuple10
 
 #     print(thisTuple10)
-
 # main()
 
 #############################
@@ -114,5 +113,47 @@ def main():
     print(c)
     print(d)
     print(e)
+
+main()
+
+#################################
+#Loop Tutle
+def main():
+    myTutle = ('apple', 'mango', 'guava')
+    for u in myTutle:
+        print(u)
+main()
+
+#################################
+#Loop through index number using for Loop
+def main():
+    myTuple = ('pineapple', 'mango', 'guava')
+    for u in range(len(myTuple)):
+        print(u, myTuple[u])
+main()
+
+#################################
+#Loop through index number using while Loop
+def main():
+    myTuple = ('pineapple', 'mango', 'guava')
+    
+    i = 0
+    while i < len(myTuple):
+        print(i, myTuple[i])
+        i += 1
+main()
+
+#################################
+#Join Tuple using + operator
+def main():
+    myTuple = ('pineapple', 'mango', 'guava')
+    yourTuple = ('AA', 'BB', 'CC')
+    ourTuple = myTuple + yourTuple
+    y = yourTuple * int(3.56)#Multiply tuple by a given number
+    x = y.count("AA")
+
+    print(ourTuple)
+    print(y)
+    print(x)
 
 main()

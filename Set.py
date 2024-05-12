@@ -98,8 +98,36 @@ def main():
 
     set44 = set11 | set22 | set33
 
+    #Join set and tuple
+    x = {'a', 'b', 'c', 'd'}
+    y = (1, 2, 3, 4, 5)
+
+    z = x.union(y)
+
+    #update() method also inserts from one set to the other
+    d = {'a', 'b', 'c', 'd'}
+    e = (1, 2, 3, 4, 5)
+
+    d.update(e)
+
+    #intersection() mothod returns only the item that is present in both sets
+    x = {'a', 'b', 'c', 7, 'd'}
+    y = (1, 2, 3, 'a', 4, 5, 7)
+
+    zz = x.intersection(y)
+
+    # & operator can be used instead of intersection method
+    x1 = {'a', 8, 'b', 'c', 'd'}
+    y1 = {1, 2, 'b', 3, 4, 5, 8}
+
+    z1 = x1 & y1
+
     print(set3)
     print(multSets)
     print(set33)
     print(set44)
+    print(z), print(type(z))
+    print(d)
+    print(zz)
+    print(z1)
 main()

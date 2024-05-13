@@ -37,3 +37,31 @@ myFunction("Sweden")
 myFunction("Poland")
 myFunction("Switzerland")
 
+#############################
+#Passing a list as an argument
+def myFunction(food):
+    for x in food:
+        print(x)
+
+fruits = ["apple", "mango", "berry"]
+
+myFunction(fruits)
+
+############################
+#Return a value from a function
+def returnFunction(x):
+    return 5 * x
+
+print(returnFunction(5))
+print(returnFunction(1))
+print(returnFunction(25))
+
+
+########################
+#Pass statement
+def passStatement():
+    pass 
+""" having an empty function definition like this,
+ would raise an error without the pass statement
+    """
+ 

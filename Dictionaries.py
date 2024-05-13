@@ -62,9 +62,9 @@ main()
 ################################
 #Loop through dictionary
 def main():
-    firstDict = {"brand": "Mercedeze",
-                 "model": "AMG",
-                 "year": 2024}
+    firstDict = {"brand:": "Mercedeze",
+                 "model:": "AMG",
+                 "year:": 2024}
     
     for i in firstDict:
         print(i)
@@ -72,6 +72,69 @@ def main():
 
     for j in firstDict.values():
         print(j)
+
+    for k, l in firstDict.items():
+        print(k, l)
+
+    #coppy a dictionary, use copy() or  dict() method
+    coppiedDict = firstDict.copy()
+    anotherCoppiedDict = dict(firstDict)
     
     print(firstDict)
+    print(coppiedDict)
+    print(anotherCoppiedDict)
+main()
+
+###############################################
+#Nested dictionary means a dict inside a dict
+#A dictionary with three dictionaries inside of it
+def main():
+    myFamily = {
+        "child1" : {
+            "name" : "Salau",
+            "year" : 1989
+        },
+        "child2" : {
+            "name" : "Sarinat",
+            "year" : 1993 
+        },
+        "child3" : {
+            "name" : "Ibrahim",
+            "year" : 1984
+        }
+    }
+
+    #or
+    child1 = {
+            "name" : "Tajudeen",
+            "year" : 1989
+        }
+    child2 = {
+            "name" : "Adijat",
+            "year" : 1993 
+        }
+    child3 = {
+            "name" : "Oloyede",
+            "year" : 1984
+        }
+    
+    myFamily2 = {
+        "child1" : child1,
+        "child2" : child2,
+        "child3" : child3
+    }
+
+    #Loop through nested dict by using items() method
+    for a, obj in myFamily2.items():
+        print(a)
+
+        for aa in obj:
+            print(aa + ':', obj[aa] )
+
+    print(myFamily)
+    print(type(myFamily))
+    print(myFamily2)
+
+    #Accessing items in nested dictionary
+    print(myFamily2["child3"]["name"])
 main()

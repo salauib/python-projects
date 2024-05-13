@@ -56,7 +56,6 @@ print(returnFunction(5))
 print(returnFunction(1))
 print(returnFunction(25))
 
-
 ########################
 #Pass statement
 def passStatement():

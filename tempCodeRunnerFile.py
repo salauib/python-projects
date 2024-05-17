@@ -1,0 +1,1 @@
+x = mymodule.greeting("Salau")

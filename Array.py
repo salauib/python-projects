@@ -5,6 +5,11 @@ def carsArray():
     cars = ["Toyota", "Ford", "Benz"]
 
     cars[1] = "Volvo" #Update an array
+    cars.append("Honda") #Added to array
+    
+    #Remove from array, use remove() or pop() methods
+    cars.remove("Benz")
+
     w = len(cars)#print the length of an array
 
     #Loop through an array

@@ -9,7 +9,7 @@ def carsArray():
     
     #Remove from array, use remove() or pop() methods
     cars.remove("Benz")
-
+    
     w = len(cars)#print the length of an array
 
     #Loop through an array

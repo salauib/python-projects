@@ -1,6 +1,6 @@
 #Using if statement
 def grade():
-    score = int(input("Score: "))
+    score = int(input("Score: ")) #Ask for a score input
     if score >= 90:
         print("Grade: A")
     elif score >= 80:
@@ -10,7 +10,6 @@ def grade():
     elif score >= 60:
         print("Grade: D")
     else:
-        print("Grade: F")
-        
+        print("Grade: F")    
 grade()
     

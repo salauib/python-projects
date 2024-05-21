@@ -1,4 +1,4 @@
-#Usinf if statement
+#Using if statement
 def grade():
     score = int(input("Score: "))
     if score >= 90:

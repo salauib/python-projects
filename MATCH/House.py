@@ -21,5 +21,4 @@ def house():
             print("In Lagos")
         case _:
             print("Who?")
-
 house()
